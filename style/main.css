@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	-moz-user-select: none;
+	user-select: none;
+	background-color: #000000;
+	color: lightgray;
+	font-size: 28px;
+	font-family: 'Inconsolata';
+	font-weight: 700;
+	display: flex;
+	height: 76vh;
+	align-items: center;
+	justify-content: center;
+}
+
+#pojemnik {
+	position: relative;
+	width: 900px;
+}
+
+#plansza {
+	width: 900px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 48px;
+	min-height: 60px;
+}
+
+#szubienica {
+	float: left; 
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+#alfabet {
+	float: left; 
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.litera {
+	width: 45px;
+	height: 45px;
+	text-align:center;
+	padding: 4px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.litera:hover {
+	background-color: #222222;
+	color: white;
+	border: 3px solid white;
+}
+.litera.correct {
+	height: 42px;
+	width: 42px;
+	margin: 6px;
+	background-color: green;
+	cursor: default;
+	border: 3px solid gray;
+	color: lightgray;
+}
+.litera.wrong {
+	height: 42px;
+	width: 42px;
+	margin: 6px;
+	background-color: red;
+	cursor: default;
+	border: 3px solid gray;
+	color: lightgray;
+}
+.reset {
+	color:green;
+	cursor: pointer;
+	font-size: 48px;
+}
+
+.reset:hover {
+	color:#b1e7db;
+}
+#points {
+	color: #e9c6c6;
+	position: absolute;
+	bottom: -20px;
+	left: 19px;
+	font-size: 26px;
+}
+#points:hover {
+	color: #d8a5a5;
+	font-size: 28px;
+}
+#category {
+	font-size: 30px;
+	color: fuchsia;
+	text-align: center;
+}
+#category:hover {
+	font-size: 32px;
+}
